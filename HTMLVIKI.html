@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+  function me2()
+  {
+ var s3=document.getElementsByName("gender");
+ console.log(s3);
+ 
+  
+  for (i=0;i<s3.length;i++)
+  {
+	 console.log(i);
+	 if(s3[i].checked)
+	 {
+		 console.log(s3[i].value);
+	 }
+  }
+}  
+  </script>
+  <!--<form id="f1" name="f1_name">-->
+  <!--<button id="f1" name= "f_name"  value="10" onClick="callme()">sent</button>
+  
+  <script>
+  function callme()
+  {
+ alert("hi");
+ console.log(document.getElementById("f1"));
+ console.log(document.getElementById("f1").value);
+ //console.log(f1);
+ }-->
+ <button id="f1" name= "f_name"  value="10" onClick="callme1()">sent</button>
+  <form id="f1" name="f1_name">
+  <script>
+  function callme1()
+  {
+ alert("hi");
+ console.log(document.getElementsByName("f_name"));
+
+ 
+ 
+ }
+
+  </script>
+
+
+<input type="text" name="name" value=id1> 
+<input type="submit" name="name"  id=callme2()>
+  
+ <!-- </form> -->
+<!-- <button id="f1" name= "f_name"  value="10" onClick="id1">sent</button>
+
+<input type="radio" name="drawing"> drawing
+<input type="radio" name="singing">singing
+<input type="radio" name="sketching">sketching
+<input type="radio" name="dancing" 
+checked> dancing
+<input type="radio" name="others">others<br>
+<input type="checkbox" name="sport1" value="cricket">Cricket<br>  
+<input type="checkbox" name="sport2" value="tennis">Tennis<br>  
+<input type="checkbox" name="sport3" value="football">Football<br>  
+<input type="checkbox" name="sport4" value="baseball">Baseball<br>  
+<input type="checkbox" name="sport5" value="badminton">Badminton<br><br>  
+<input type="submit" value="submit">  -->
+
+<!-- <script>
+//  function me1()
+//  {
+ // alert(console.log(document.getElementsByName(id1));
+// var s1=document.getElementById("languages");
+// console.log(s1);
+// var s2=s1.options[s1.selectedIndex].value
+// alert(s2);
+   
+//  }
+  </script>
+ -->
+<select id ="languages">
+<option value="en">English</option>
+<option value="tamil">tamil</option>
+<option value="malayalam">malayalam</option>
+<option value="hindi">hindi</option>
+<option value="french">french</option>
+</select>
+<input type="submit" name= "submit"   onClick="me1()">
+
+
+<input type="radio" "name="gender" value="male">male
+<input type="radio" "name="gender"  value="female">female
+<input type="radio" "name="gender" value="others">others
+<input type="submit" name= "submit" onClick="me2()">
+
+
+Java: <input type="checkbox" id="check1" name="pl" value="Java">  <br>
+  PHP: <input type="checkbox" id="check2" name="pl" value="PHP">  <br>
+  
+  Angular: <input type="checkbox" id="check3" name="pl" value="Angular"> <br>
+  CSS: <input type="checkbox" id="check4" name="pl" value="CSS">  <br>
+ 
+  Python: <input type="checkbox" id="check5" name="pl" value="Python"> <br> 
+  Android: <input type="checkbox" id="check6" name="pl" value="Android">  <br><br>
+  <input type="submit" name= "submit" onClick="cbox()">
+  <script>
+  function cbox()
+  {
+  var markedCheckbox = document.getElementsByName('pl');  
+		console.log('welcome_1'+markedCheckbox);
+		for (var checkbox of markedCheckbox)
+		{  
+			if (checkbox.checked)  
+				console.log(checkbox.value + ' ');
+		}
+		}
+		</script>
+ </body>
+</html>
